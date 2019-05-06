@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD18587122801F1700AC0F9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18587022801F1700AC0F9E /* AppDelegate.swift */; };
+		DD18587322801F1700AC0F9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18587222801F1700AC0F9E /* ViewController.swift */; };
+		DD18587622801F1700AC0F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD18587422801F1700AC0F9E /* Main.storyboard */; };
+		DD18587822801F1800AC0F9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD18587722801F1800AC0F9E /* Assets.xcassets */; };
+		DD18587B22801F1800AC0F9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD18587922801F1800AC0F9E /* LaunchScreen.storyboard */; };
+		DD18588622801F1900AC0F9E /* Shamaz_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18588522801F1900AC0F9E /* Shamaz_AppTests.swift */; };
+		DD18589122801F1900AC0F9E /* Shamaz_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18589022801F1900AC0F9E /* Shamaz_AppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD18588222801F1900AC0F9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD18586522801F1700AC0F9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD18586C22801F1700AC0F9E;
+			remoteInfo = "Shamaz App";
+		};
+		DD18588D22801F1900AC0F9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD18586522801F1700AC0F9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD18586C22801F1700AC0F9E;
+			remoteInfo = "Shamaz App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD18586D22801F1700AC0F9E /* Shamaz App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shamaz App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD18587022801F1700AC0F9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD18587222801F1700AC0F9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD18587522801F1700AC0F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD18587722801F1800AC0F9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD18587A22801F1800AC0F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD18587C22801F1800AC0F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD18588122801F1900AC0F9E /* Shamaz AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shamaz AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD18588522801F1900AC0F9E /* Shamaz_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shamaz_AppTests.swift; sourceTree = "<group>"; };
+		DD18588722801F1900AC0F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD18588C22801F1900AC0F9E /* Shamaz AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shamaz AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD18589022801F1900AC0F9E /* Shamaz_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shamaz_AppUITests.swift; sourceTree = "<group>"; };
+		DD18589222801F1900AC0F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD18586A22801F1700AC0F9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD18587E22801F1900AC0F9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD18588922801F1900AC0F9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD18586422801F1700AC0F9E = {
+			isa = PBXGroup;
+			children = (
+				DD18586F22801F1700AC0F9E /* Shamaz App */,
+				DD18588422801F1900AC0F9E /* Shamaz AppTests */,
+				DD18588F22801F1900AC0F9E /* Shamaz AppUITests */,
+				DD18586E22801F1700AC0F9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD18586E22801F1700AC0F9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD18586D22801F1700AC0F9E /* Shamaz App.app */,
+				DD18588122801F1900AC0F9E /* Shamaz AppTests.xctest */,
+				DD18588C22801F1900AC0F9E /* Shamaz AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD18586F22801F1700AC0F9E /* Shamaz App */ = {
+			isa = PBXGroup;
+			children = (
+				DD18587022801F1700AC0F9E /* AppDelegate.swift */,
+				DD18587222801F1700AC0F9E /* ViewController.swift */,
+				DD18587422801F1700AC0F9E /* Main.storyboard */,
+				DD18587722801F1800AC0F9E /* Assets.xcassets */,
+				DD18587922801F1800AC0F9E /* LaunchScreen.storyboard */,
+				DD18587C22801F1800AC0F9E /* Info.plist */,
+			);
+			path = "Shamaz App";
+			sourceTree = "<group>";
+		};
+		DD18588422801F1900AC0F9E /* Shamaz AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD18588522801F1900AC0F9E /* Shamaz_AppTests.swift */,
+				DD18588722801F1900AC0F9E /* Info.plist */,
+			);
+			path = "Shamaz AppTests";
+			sourceTree = "<group>";
+		};
+		DD18588F22801F1900AC0F9E /* Shamaz AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD18589022801F1900AC0F9E /* Shamaz_AppUITests.swift */,
+				DD18589222801F1900AC0F9E /* Info.plist */,
+			);
+			path = "Shamaz AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD18586C22801F1700AC0F9E /* Shamaz App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD18589522801F1900AC0F9E /* Build configuration list for PBXNativeTarget "Shamaz App" */;
+			buildPhases = (
+				DD18586922801F1700AC0F9E /* Sources */,
+				DD18586A22801F1700AC0F9E /* Frameworks */,
+				DD18586B22801F1700AC0F9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Shamaz App";
+			productName = "Shamaz App";
+			productReference = DD18586D22801F1700AC0F9E /* Shamaz App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD18588022801F1900AC0F9E /* Shamaz AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD18589822801F1900AC0F9E /* Build configuration list for PBXNativeTarget "Shamaz AppTests" */;
+			buildPhases = (
+				DD18587D22801F1900AC0F9E /* Sources */,
+				DD18587E22801F1900AC0F9E /* Frameworks */,
+				DD18587F22801F1900AC0F9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD18588322801F1900AC0F9E /* PBXTargetDependency */,
+			);
+			name = "Shamaz AppTests";
+			productName = "Shamaz AppTests";
+			productReference = DD18588122801F1900AC0F9E /* Shamaz AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD18588B22801F1900AC0F9E /* Shamaz AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD18589B22801F1900AC0F9E /* Build configuration list for PBXNativeTarget "Shamaz AppUITests" */;
+			buildPhases = (
+				DD18588822801F1900AC0F9E /* Sources */,
+				DD18588922801F1900AC0F9E /* Frameworks */,
+				DD18588A22801F1900AC0F9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD18588E22801F1900AC0F9E /* PBXTargetDependency */,
+			);
+			name = "Shamaz AppUITests";
+			productName = "Shamaz AppUITests";
+			productReference = DD18588C22801F1900AC0F9E /* Shamaz AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD18586522801F1700AC0F9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Peter Bradtke";
+				TargetAttributes = {
+					DD18586C22801F1700AC0F9E = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					DD18588022801F1900AC0F9E = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = DD18586C22801F1700AC0F9E;
+					};
+					DD18588B22801F1900AC0F9E = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = DD18586C22801F1700AC0F9E;
+					};
+				};
+			};
+			buildConfigurationList = DD18586822801F1700AC0F9E /* Build configuration list for PBXProject "Shamaz App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD18586422801F1700AC0F9E;
+			productRefGroup = DD18586E22801F1700AC0F9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD18586C22801F1700AC0F9E /* Shamaz App */,
+				DD18588022801F1900AC0F9E /* Shamaz AppTests */,
+				DD18588B22801F1900AC0F9E /* Shamaz AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD18586B22801F1700AC0F9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD18587B22801F1800AC0F9E /* LaunchScreen.storyboard in Resources */,
+				DD18587822801F1800AC0F9E /* Assets.xcassets in Resources */,
+				DD18587622801F1700AC0F9E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD18587F22801F1900AC0F9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD18588A22801F1900AC0F9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD18586922801F1700AC0F9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD18587322801F1700AC0F9E /* ViewController.swift in Sources */,
+				DD18587122801F1700AC0F9E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD18587D22801F1900AC0F9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD18588622801F1900AC0F9E /* Shamaz_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD18588822801F1900AC0F9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD18589122801F1900AC0F9E /* Shamaz_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD18588322801F1900AC0F9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD18586C22801F1700AC0F9E /* Shamaz App */;
+			targetProxy = DD18588222801F1900AC0F9E /* PBXContainerItemProxy */;
+		};
+		DD18588E22801F1900AC0F9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD18586C22801F1700AC0F9E /* Shamaz App */;
+			targetProxy = DD18588D22801F1900AC0F9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD18587422801F1700AC0F9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD18587522801F1700AC0F9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD18587922801F1800AC0F9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD18587A22801F1800AC0F9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD18589322801F1900AC0F9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD18589422801F1900AC0F9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD18589622801F1900AC0F9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Shamaz App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "peterbradtke.Shamaz-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DD18589722801F1900AC0F9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Shamaz App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "peterbradtke.Shamaz-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DD18589922801F1900AC0F9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Shamaz AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "peterbradtke.Shamaz-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shamaz App.app/Shamaz App";
+			};
+			name = Debug;
+		};
+		DD18589A22801F1900AC0F9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Shamaz AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "peterbradtke.Shamaz-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shamaz App.app/Shamaz App";
+			};
+			name = Release;
+		};
+		DD18589C22801F1900AC0F9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Shamaz AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "peterbradtke.Shamaz-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Shamaz App";
+			};
+			name = Debug;
+		};
+		DD18589D22801F1900AC0F9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Shamaz AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "peterbradtke.Shamaz-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Shamaz App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD18586822801F1700AC0F9E /* Build configuration list for PBXProject "Shamaz App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD18589322801F1900AC0F9E /* Debug */,
+				DD18589422801F1900AC0F9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD18589522801F1900AC0F9E /* Build configuration list for PBXNativeTarget "Shamaz App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD18589622801F1900AC0F9E /* Debug */,
+				DD18589722801F1900AC0F9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD18589822801F1900AC0F9E /* Build configuration list for PBXNativeTarget "Shamaz AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD18589922801F1900AC0F9E /* Debug */,
+				DD18589A22801F1900AC0F9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD18589B22801F1900AC0F9E /* Build configuration list for PBXNativeTarget "Shamaz AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD18589C22801F1900AC0F9E /* Debug */,
+				DD18589D22801F1900AC0F9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD18586522801F1700AC0F9E /* Project object */;
+}
