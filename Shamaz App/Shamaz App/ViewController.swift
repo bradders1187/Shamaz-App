@@ -10,21 +10,31 @@ import UIKit
 
 class ViewController: UIViewController {
         
-        @IBOutlet weak var nextPlayer: UILabel!
-        @IBOutlet weak var pastButton: UIButton!
-        @IBOutlet weak var futureButton: UIButton!
+    @IBOutlet weak var nextPlayer: UILabel!
+    @IBOutlet weak var pastButton: UIButton!
+    @IBOutlet weak var futureButton: UIButton!
+    @IBOutlet weak var nextPlayerButton: UIButton!
+    @IBOutlet weak var playerListButton: UIButton!
+    
+    
+    var names = ["Pete", "Sarah B", "Luke", "Sarah C", "Louis", "Emma", "Jay", "Jen", "Chris", "Greg"]
         
         override func viewDidLoad() {
             super.viewDidLoad()
             
+            futureButton.isEnabled = false
+            pastButton.isEnabled = false
+            nextPlayerButton.isEnabled = true
             
-        }
+            }
         
         @IBAction func pastButton(_ sender: Any, forEvent event: UIEvent) {
             let past = ["1 Year ago?", "1 Week ago?", "2 Weeks ago?", "5 Years ago?", "2 days ago?"]
             let alert = (UIAlertController (title: pastQuestions.randomElement(), message: past.randomElement(), preferredStyle: .alert))
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true)
+            
+            pastFutureDidClick()
             
         }
         
@@ -33,32 +43,39 @@ class ViewController: UIViewController {
             let alert = (UIAlertController (title: futureQuestions.randomElement(), message: future.randomElement(), preferredStyle: .alert))
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true)
+            
+            pastFutureDidClick()
+            
+            
         }
         
         let pastQuestions = ["Describe what you did this time", "Tell a funny story from", "Tell an embarrassing story from", "Tell us your favourite song from"]
         let futureQuestions = ["What can you see yourself doing in", "What would you love to be doing"]
         
-        @IBAction func nextPlayer(_ sender: Any) {
-            var names = ["Pete", "Sarah B", "Luke", "Sarah C", "Louis", "Emma", "Jay", "Jen", "Chris", "Greg"]
-            nextPlayer.text = names.randomElement()
-            let randomElement = 1
-            if names.count > randomElement {
-                names.remove(at: randomElement)
+        @IBAction func nextPlayer (_ sender: Any) {
+        
+            let randomName = names.randomElement()
+            nextPlayer.text = randomName
             
-                if nextPlayer.text?.isEmpty == false {
-                    futureButton.isHidden = true
-                } else {
-                    futureButton.isHidden = false
-                    
-                    if nextPlayer.text?.isEmpty == false {
-                        pastButton.isHidden = true
-                    } else {
-                        pastButton.isEnabled = false
-                        
+            if let _name = randomName, let index = names.firstIndex(of: _name){
+                names.remove(at: index)
+                
+        pastButton.isEnabled = true
+        futureButton.isEnabled = true
+        nextPlayerButton.isEnabled = false
+                
+            
+                }
+            }
+            
+            private func pastFutureDidClick() {
+                pastButton.isEnabled = false
+                futureButton.isEnabled = false
+                nextPlayerButton.isEnabled = true
                     }
                     
                     
                 }
-}
-}
-}
+
+
+

@@ -14,6 +14,8 @@
 		DD18587B22801F1800AC0F9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD18587922801F1800AC0F9E /* LaunchScreen.storyboard */; };
 		DD18588622801F1900AC0F9E /* Shamaz_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18588522801F1900AC0F9E /* Shamaz_AppTests.swift */; };
 		DD18589122801F1900AC0F9E /* Shamaz_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18589022801F1900AC0F9E /* Shamaz_AppUITests.swift */; };
+		DD1858A12280BF7400AC0F9E /* Player List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1858A02280BF7400AC0F9E /* Player List.storyboard */; };
+		DDE2643C22819D650022B205 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE2643B22819D650022B205 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		DD18588C22801F1900AC0F9E /* Shamaz AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shamaz AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD18589022801F1900AC0F9E /* Shamaz_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shamaz_AppUITests.swift; sourceTree = "<group>"; };
 		DD18589222801F1900AC0F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD1858A02280BF7400AC0F9E /* Player List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Player List.storyboard"; sourceTree = "<group>"; };
+		DDE2643B22819D650022B205 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,9 @@
 			children = (
 				DD18587022801F1700AC0F9E /* AppDelegate.swift */,
 				DD18587222801F1700AC0F9E /* ViewController.swift */,
+				DDE2643B22819D650022B205 /* SecondViewController.swift */,
 				DD18587422801F1700AC0F9E /* Main.storyboard */,
+				DD1858A02280BF7400AC0F9E /* Player List.storyboard */,
 				DD18587722801F1800AC0F9E /* Assets.xcassets */,
 				DD18587922801F1800AC0F9E /* LaunchScreen.storyboard */,
 				DD18587C22801F1800AC0F9E /* Info.plist */,
@@ -231,6 +237,7 @@
 			files = (
 				DD18587B22801F1800AC0F9E /* LaunchScreen.storyboard in Resources */,
 				DD18587822801F1800AC0F9E /* Assets.xcassets in Resources */,
+				DD1858A12280BF7400AC0F9E /* Player List.storyboard in Resources */,
 				DD18587622801F1700AC0F9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE2643C22819D650022B205 /* SecondViewController.swift in Sources */,
 				DD18587322801F1700AC0F9E /* ViewController.swift in Sources */,
 				DD18587122801F1700AC0F9E /* AppDelegate.swift in Sources */,
 			);
