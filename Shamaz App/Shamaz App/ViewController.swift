@@ -53,7 +53,6 @@ class ViewController: UIViewController {
         let futureQuestions = ["What can you see yourself doing in", "What would you love to be doing"]
         
         @IBAction func nextPlayer (_ sender: Any) {
-        
             let randomName = names.randomElement()
             nextPlayer.text = randomName
             
@@ -63,9 +62,13 @@ class ViewController: UIViewController {
         pastButton.isEnabled = true
         futureButton.isEnabled = true
         nextPlayerButton.isEnabled = false
-                
+        }
             
-                }
+            func startNewRound () {
+                
+            }
+            
+            
             }
             
             private func pastFutureDidClick() {
