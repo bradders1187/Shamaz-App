@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     
     
     var names = ["Pete", "Sarah B", "Luke", "Sarah C", "Louis", "Emma", "Jay", "Jen", "Chris", "Greg"]
+    let pastQuestions = ["Describe what you did this time", "Tell a funny story from", "Tell an embarrassing story from", "Tell us your favourite song from"]
+    let futureQuestions = ["What can you see yourself doing in", "What would you love to be doing"]
         
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -25,8 +27,15 @@ class ViewController: UIViewController {
             futureButton.isEnabled = false
             pastButton.isEnabled = false
             nextPlayerButton.isEnabled = true
-            
-            }
+        }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        nextPlayerButton.layer.cornerRadius = nextPlayerButton.bounds.height/2
+        playerListButton.layer.cornerRadius = playerListButton.bounds.height/2
+        
+    }
+    
         
         @IBAction func pastButton(_ sender: Any, forEvent event: UIEvent) {
             let past = ["1 Year ago?", "1 Week ago?", "2 Weeks ago?", "5 Years ago?", "2 days ago?"]
@@ -49,8 +58,7 @@ class ViewController: UIViewController {
             
         }
         
-        let pastQuestions = ["Describe what you did this time", "Tell a funny story from", "Tell an embarrassing story from", "Tell us your favourite song from"]
-        let futureQuestions = ["What can you see yourself doing in", "What would you love to be doing"]
+    
         
         @IBAction func nextPlayer (_ sender: Any) {
             let randomName = names.randomElement()
@@ -64,21 +72,30 @@ class ViewController: UIViewController {
         nextPlayerButton.isEnabled = false
         }
             
-            func startNewRound () {
+            
+            
+            }
+            
+        private func pastFutureDidClick() {
+            pastButton.isEnabled = false
+            futureButton.isEnabled = false
+            nextPlayerButton.isEnabled = true
                 
-            }
+        if names.isEmpty {
+            nextPlayerButton.setTitle("PLAY AGAIN", for: .normal)
+    }
             
-            
-            }
-            
-            private func pastFutureDidClick() {
-                pastButton.isEnabled = false
-                futureButton.isEnabled = false
-                nextPlayerButton.isEnabled = true
-                    }
+    
                     
-                    
-                }
+}
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    let _ : SecondViewController = segue.destination as! SecondViewController
+    }
+    
+    @IBAction func playerListButton(_ sender: UIStoryboardSegue){
+    }
+    
+    
 
 
-
+}
