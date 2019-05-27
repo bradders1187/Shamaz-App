@@ -33,6 +33,9 @@
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="li7-0e-slA">
                                 <rect key="frame" x="20" y="456" width="280" height="58"/>
                                 <color key="backgroundColor" red="0.534698173" green="0.7109287742" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="F31-sh-pBg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="WHO'S NEXT?">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -44,6 +47,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zj3-us-oJA">
                                 <rect key="frame" x="20" y="522" width="280" height="30"/>
                                 <color key="backgroundColor" red="0.534698173" green="0.7109287742" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Wsg-hl-VMS"/>
+                                </constraints>
                                 <state key="normal" title="Player List">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -53,18 +59,18 @@
                                 </connections>
                             </button>
                             <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ve4-ms-n7Y">
-                                <rect key="frame" x="20" y="360" width="280" height="30"/>
+                                <rect key="frame" x="20" y="40" width="280" height="350"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ch-cW-QI3">
-                                        <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
-                                        <color key="backgroundColor" red="0.85540803109999997" green="0.170433577" blue="0.17537182539999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="350"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <action selector="pastButton:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Qy-yx-xye"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0w-6g-6pQ">
-                                        <rect key="frame" x="150" y="0.0" width="130" height="30"/>
-                                        <color key="backgroundColor" red="0.22508274889999999" green="0.29826939359999999" blue="0.99441200490000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <rect key="frame" x="150" y="0.0" width="130" height="350"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal">
                                             <color key="titleColor" red="0.85540803109999997" green="0.170433577" blue="0.17537182539999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <color key="titleShadowColor" red="0.85540803109999997" green="0.170433577" blue="0.17537182539999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -82,6 +88,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="li7-0e-slA" secondAttribute="trailing" constant="20" id="1s2-gs-17D"/>
                             <constraint firstItem="4oQ-GJ-5bf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2el-tz-0AQ"/>
                             <constraint firstItem="Zj3-us-oJA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3IS-HR-COc"/>
+                            <constraint firstItem="Ve4-ms-n7Y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="GlC-Sa-BTd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zj3-us-oJA" secondAttribute="trailing" constant="20" id="GyZ-rU-drh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4oQ-GJ-5bf" secondAttribute="trailing" constant="20" id="MLr-U6-NGB"/>
                             <constraint firstItem="4oQ-GJ-5bf" firstAttribute="top" secondItem="Ve4-ms-n7Y" secondAttribute="bottom" constant="8" id="Z4P-mK-tNK"/>
@@ -130,10 +137,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" smartInsertDeleteType="yes" textContentType="name"/>
-                                <connections>
-                                    <action selector="nameTextField" destination="Th6-mo-ef7" eventType="editingDidBegin" id="dXe-kL-uLU"/>
-                                    <action selector="nameTextField:" destination="Th6-mo-ef7" eventType="editingDidBegin" id="aRD-s9-aki"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There must be a minimum of 2 players" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Scx-eK-xvY">
                                 <rect key="frame" x="20" y="126" width="280" height="18"/>
@@ -159,8 +162,8 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="dye-OC-cNn"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6G6-NF-z2x">
-                                <rect key="frame" x="20" y="333" width="280" height="113"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6G6-NF-z2x" customClass="CustomTableView" customModule="Shamaz_App" customModuleProvider="target">
+                                <rect key="frame" x="20" y="333" width="280" height="215"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -176,7 +179,7 @@
                             <constraint firstItem="vH6-aQ-wJ1" firstAttribute="leading" secondItem="W9H-GN-98E" secondAttribute="leading" constant="20" id="Vgk-ae-WQE"/>
                             <constraint firstItem="uUU-1G-qnF" firstAttribute="leading" secondItem="Scx-eK-xvY" secondAttribute="trailing" constant="-57" id="WxT-bP-tTZ"/>
                             <constraint firstItem="W9H-GN-98E" firstAttribute="trailing" secondItem="uUU-1G-qnF" secondAttribute="trailing" constant="20" id="aFy-E2-WCj"/>
-                            <constraint firstItem="W9H-GN-98E" firstAttribute="bottom" secondItem="6G6-NF-z2x" secondAttribute="bottom" constant="122" id="bfY-bY-Vr5"/>
+                            <constraint firstItem="W9H-GN-98E" firstAttribute="bottom" secondItem="6G6-NF-z2x" secondAttribute="bottom" constant="20" id="bfY-bY-Vr5"/>
                             <constraint firstItem="Huc-0Y-Njr" firstAttribute="top" secondItem="W9H-GN-98E" secondAttribute="top" constant="14" id="nRj-Rn-k21"/>
                             <constraint firstItem="uUU-1G-qnF" firstAttribute="top" secondItem="vH6-aQ-wJ1" secondAttribute="bottom" constant="56" id="pKl-z6-C9y"/>
                             <constraint firstItem="6G6-NF-z2x" firstAttribute="leading" secondItem="W9H-GN-98E" secondAttribute="leading" constant="20" id="qbo-qc-xeP"/>
@@ -192,7 +195,7 @@
                         <outlet property="nameTextField" destination="vH6-aQ-wJ1" id="0Ff-Rs-dsA"/>
                         <outlet property="playerButton" destination="uUU-1G-qnF" id="j23-v1-G48"/>
                         <outlet property="saveButton" destination="W25-tj-1Zd" id="SoK-JN-50w"/>
-                        <outletCollection property="playerTableView" destination="6G6-NF-z2x" collectionClass="NSMutableArray" id="HBw-Op-7Hg"/>
+                        <outlet property="tableView" destination="6G6-NF-z2x" id="brA-ZE-l5W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpX-VT-zVh" userLabel="First Responder" sceneMemberID="firstResponder"/>

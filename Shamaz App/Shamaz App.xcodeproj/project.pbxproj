@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BD465A62292ED1000C9A0DC /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD465A52292ED1000C9A0DC /* CustomTableView.swift */; };
+		5BD465AA2292EF5C00C9A0DC /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD465A82292EF5C00C9A0DC /* CustomTableViewCell.swift */; };
+		5BD465AB2292EF5C00C9A0DC /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BD465A92292EF5C00C9A0DC /* CustomTableViewCell.xib */; };
 		DD18587122801F1700AC0F9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18587022801F1700AC0F9E /* AppDelegate.swift */; };
-		DD18587322801F1700AC0F9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18587222801F1700AC0F9E /* ViewController.swift */; };
+		DD18587322801F1700AC0F9E /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18587222801F1700AC0F9E /* GameController.swift */; };
 		DD18587622801F1700AC0F9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD18587422801F1700AC0F9E /* Main.storyboard */; };
 		DD18587822801F1800AC0F9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD18587722801F1800AC0F9E /* Assets.xcassets */; };
 		DD18587B22801F1800AC0F9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD18587922801F1800AC0F9E /* LaunchScreen.storyboard */; };
 		DD18588622801F1900AC0F9E /* Shamaz_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18588522801F1900AC0F9E /* Shamaz_AppTests.swift */; };
 		DD18589122801F1900AC0F9E /* Shamaz_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD18589022801F1900AC0F9E /* Shamaz_AppUITests.swift */; };
 		DD1858A12280BF7400AC0F9E /* Player List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1858A02280BF7400AC0F9E /* Player List.storyboard */; };
-		DDE2643C22819D650022B205 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE2643B22819D650022B205 /* SecondViewController.swift */; };
+		DDE2643C22819D650022B205 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE2643B22819D650022B205 /* PlayerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5BD465A52292ED1000C9A0DC /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
+		5BD465A82292EF5C00C9A0DC /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		5BD465A92292EF5C00C9A0DC /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		DD18586D22801F1700AC0F9E /* Shamaz App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shamaz App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD18587022801F1700AC0F9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD18587222801F1700AC0F9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD18587222801F1700AC0F9E /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		DD18587522801F1700AC0F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD18587722801F1800AC0F9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD18587A22801F1800AC0F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,7 +56,7 @@
 		DD18589022801F1900AC0F9E /* Shamaz_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shamaz_AppUITests.swift; sourceTree = "<group>"; };
 		DD18589222801F1900AC0F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD1858A02280BF7400AC0F9E /* Player List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Player List.storyboard"; sourceTree = "<group>"; };
-		DDE2643B22819D650022B205 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DDE2643B22819D650022B205 /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BD465A32292ECE100C9A0DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5BD465A42292ECE700C9A0DC /* CustomTableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5BD465A42292ECE700C9A0DC /* CustomTableView */ = {
+			isa = PBXGroup;
+			children = (
+				5BD465A52292ED1000C9A0DC /* CustomTableView.swift */,
+			);
+			path = CustomTableView;
+			sourceTree = "<group>";
+		};
+		5BD465A72292EF3D00C9A0DC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5BD465A82292EF5C00C9A0DC /* CustomTableViewCell.swift */,
+				5BD465A92292EF5C00C9A0DC /* CustomTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		DD18586422801F1700AC0F9E = {
 			isa = PBXGroup;
 			children = (
@@ -102,13 +133,15 @@
 			isa = PBXGroup;
 			children = (
 				DD18587022801F1700AC0F9E /* AppDelegate.swift */,
-				DD18587222801F1700AC0F9E /* ViewController.swift */,
-				DDE2643B22819D650022B205 /* SecondViewController.swift */,
+				DD18587222801F1700AC0F9E /* GameController.swift */,
+				DDE2643B22819D650022B205 /* PlayerController.swift */,
 				DD18587422801F1700AC0F9E /* Main.storyboard */,
 				DD1858A02280BF7400AC0F9E /* Player List.storyboard */,
 				DD18587722801F1800AC0F9E /* Assets.xcassets */,
 				DD18587922801F1800AC0F9E /* LaunchScreen.storyboard */,
 				DD18587C22801F1800AC0F9E /* Info.plist */,
+				5BD465A72292EF3D00C9A0DC /* Cells */,
+				5BD465A32292ECE100C9A0DC /* Views */,
 			);
 			path = "Shamaz App";
 			sourceTree = "<group>";
@@ -238,6 +271,7 @@
 				DD18587B22801F1800AC0F9E /* LaunchScreen.storyboard in Resources */,
 				DD18587822801F1800AC0F9E /* Assets.xcassets in Resources */,
 				DD1858A12280BF7400AC0F9E /* Player List.storyboard in Resources */,
+				5BD465AB2292EF5C00C9A0DC /* CustomTableViewCell.xib in Resources */,
 				DD18587622801F1700AC0F9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,8 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDE2643C22819D650022B205 /* SecondViewController.swift in Sources */,
-				DD18587322801F1700AC0F9E /* ViewController.swift in Sources */,
+				DDE2643C22819D650022B205 /* PlayerController.swift in Sources */,
+				5BD465AA2292EF5C00C9A0DC /* CustomTableViewCell.swift in Sources */,
+				DD18587322801F1700AC0F9E /* GameController.swift in Sources */,
+				5BD465A62292ED1000C9A0DC /* CustomTableView.swift in Sources */,
 				DD18587122801F1700AC0F9E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
