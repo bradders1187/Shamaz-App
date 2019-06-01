@@ -8,7 +8,7 @@
 
 import UIKit
 
-class playerController: UIViewController, UITextFieldDelegate {
+class PlayerController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var playerButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
@@ -17,28 +17,30 @@ class playerController: UIViewController, UITextFieldDelegate {
   
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-       
+    super.viewDidLoad()
         playerButton.isEnabled = false
-        nameTextField.delegate = self    }
+        nameTextField.delegate = self
+        nameTextField.placeholder = "Please enter the player name"
+        tableView.separatorStyle = .none
+    }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         
     }
     
     @IBAction func saveButton(_ sender: Any) {
-        
-        if let name = nameTextField.text {
-            tableView.inputDatasource.append(name)
-            tableView.reloadData()
-        }
-        
-        
+    if let name = nameTextField.text {
+        tableView.inputDatasource.append(name)
+        tableView.reloadData()
+        nameTextField.text = nil
+    }
+    if tableView.inputDatasource.count >= 2 {
+        playerButton.isEnabled = true
+    }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            let vc : gameController = segue.destination as! gameController
-        vc.names = tableView.inputDatasource
+        (segue.destination as! GameController).names = tableView.inputDatasource
     }
     
 }

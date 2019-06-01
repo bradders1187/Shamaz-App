@@ -14,9 +14,11 @@ class CustomTableViewCell: UITableViewCell {
     
     
     
+    
     func config(text: String) {
         
-        nameLabel.text = text
+    nameLabel.text = text
     }
+    
     
 }

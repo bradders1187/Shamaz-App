@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="57.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sf7-a7-ufL">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="sf7-a7-ufL">
                         <rect key="frame" x="139" y="18" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -29,8 +29,9 @@
                 <color key="backgroundColor" red="0.534698173" green="0.7109287742" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="sf7-a7-ufL" secondAttribute="bottom" constant="18.5" id="2lG-2T-TTK"/>
-                    <constraint firstItem="sf7-a7-ufL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="139" id="lvG-jC-JSI"/>
-                    <constraint firstAttribute="trailing" secondItem="sf7-a7-ufL" secondAttribute="trailing" constant="139" id="mag-1E-fYY"/>
+                    <constraint firstItem="sf7-a7-ufL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="LIs-FA-8zV"/>
+                    <constraint firstItem="sf7-a7-ufL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="lvG-jC-JSI"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sf7-a7-ufL" secondAttribute="trailing" constant="10" id="mag-1E-fYY"/>
                     <constraint firstItem="sf7-a7-ufL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="w7t-jH-ZRM"/>
                 </constraints>
             </tableViewCellContentView>

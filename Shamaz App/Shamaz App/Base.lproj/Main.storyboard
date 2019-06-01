@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Game Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Shamaz_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GameController" customModule="Shamaz_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,8 +54,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="playerListButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dHV-NK-fHF"/>
-                                    <segue destination="Th6-mo-ef7" kind="show" id="lYP-o5-X3I"/>
+                                    <action selector="goback:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ts-ry-aBW"/>
                                 </connections>
                             </button>
                             <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ve4-ms-n7Y">
@@ -116,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="44.927536231884062" y="18.75"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Player Controller-->
         <scene sceneID="9PD-Rb-fX2">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="Th6-mo-ef7" customClass="SecondViewController" customModule="Shamaz_App" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="Th6-mo-ef7" customClass="PlayerController" customModule="Shamaz_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0n5-HC-dol">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,9 +133,9 @@
                                 <rect key="frame" x="20" y="170" width="280" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" smartInsertDeleteType="yes" textContentType="name"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" enablesReturnKeyAutomatically="YES" smartInsertDeleteType="yes" textContentType="name"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There must be a minimum of 2 players" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Scx-eK-xvY">
                                 <rect key="frame" x="20" y="126" width="280" height="18"/>
@@ -159,16 +158,19 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="dye-OC-cNn"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="dye-OC-cNn"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6G6-NF-z2x" customClass="CustomTableView" customModule="Shamaz_App" customModuleProvider="target">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6G6-NF-z2x" customClass="CustomTableView" customModule="Shamaz_App" customModuleProvider="target">
                                 <rect key="frame" x="20" y="333" width="280" height="215"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.534698173" green="0.7109287742" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.53469817296367361" green="0.71092877417028022" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="uUU-1G-qnF" firstAttribute="leading" secondItem="W25-tj-1Zd" secondAttribute="trailing" constant="186" id="1Ai-Ol-LJA"/>
                             <constraint firstItem="Scx-eK-xvY" firstAttribute="leading" secondItem="W9H-GN-98E" secondAttribute="leading" constant="20" id="1Kw-e6-cXi"/>
                             <constraint firstItem="W25-tj-1Zd" firstAttribute="top" secondItem="vH6-aQ-wJ1" secondAttribute="bottom" constant="56" id="3A7-KP-7Z3"/>
                             <constraint firstItem="W9H-GN-98E" firstAttribute="trailing" secondItem="Huc-0Y-Njr" secondAttribute="trailing" constant="20" id="3D4-Ie-9cA"/>
