@@ -14,6 +14,8 @@ class PlayerController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var tableView: CustomTableView!
+    
+    var startNewGame = false
   
     
     override func viewDidLoad() {
@@ -24,19 +26,37 @@ class PlayerController: UIViewController, UITextFieldDelegate {
         tableView.separatorStyle = .none
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("START NEW GAME: \(startNewGame)")
+        
+        if startNewGame {
+            tableView.inputDatasource = []
+            tableView.reloadData()
+        }
+    }
+    
     func textFieldDidBeginEditing(_ textField: UITextField) {
         
     }
     
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string:String) -> Bool {
+        saveButton.isEnabled = textField.text?.count ?? 0 > 2 ? true : false
+        
+        return true
+    }
+    
     @IBAction func saveButton(_ sender: Any) {
     if let name = nameTextField.text {
+        if !name.isEmpty {
         tableView.inputDatasource.append(name)
         tableView.reloadData()
         nameTextField.text = nil
+        }
     }
-    if tableView.inputDatasource.count >= 2 {
+        if tableView.inputDatasource.count >= 2 {
         playerButton.isEnabled = true
-    }
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

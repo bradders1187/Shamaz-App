@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Th6-mo-ef7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Prf-ei-obk">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -115,6 +115,21 @@
             </objects>
             <point key="canvasLocation" x="44.927536231884062" y="18.75"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tgG-kS-OMv">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="Prf-ei-obk" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zjr-AQ-y8s">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Th6-mo-ef7" kind="relationship" relationship="rootViewController" id="GtK-0n-lzH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GJs-nY-Mn9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1659" y="17"/>
+        </scene>
         <!--Player Controller-->
         <scene sceneID="9PD-Rb-fX2">
             <objects>
@@ -158,7 +173,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="dye-OC-cNn"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="dye-OC-cNn"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6G6-NF-z2x" customClass="CustomTableView" customModule="Shamaz_App" customModuleProvider="target">
@@ -193,6 +208,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="W9H-GN-98E"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ro9-DI-zNT"/>
                     <connections>
                         <outlet property="nameTextField" destination="vH6-aQ-wJ1" id="0Ff-Rs-dsA"/>
                         <outlet property="playerButton" destination="uUU-1G-qnF" id="j23-v1-G48"/>
@@ -202,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpX-VT-zVh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-847.82608695652175" y="17.410714285714285"/>
+            <point key="canvasLocation" x="-793" y="17"/>
         </scene>
     </scenes>
     <resources>

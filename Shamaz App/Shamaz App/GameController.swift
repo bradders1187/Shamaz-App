@@ -74,11 +74,16 @@ class GameController: UIViewController {
                 
     if names.isEmpty {
         nextPlayerButton.setTitle("Out of Players", for: .normal)
+        playerListButton.setTitle("Play Again", for: .normal)
     }
     }
     
     @IBAction func goback(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        if let root = self.navigationController?.viewControllers.first as? PlayerController {
+            print("START NEW GAME")
+            root.startNewGame = true
+            navigationController?.popViewController(animated: true)
+        }
     }
     
 
