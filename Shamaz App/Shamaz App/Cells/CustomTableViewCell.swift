@@ -12,13 +12,8 @@ class CustomTableViewCell: UITableViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
     
-    
-    
-    
     func config(text: String) {
-        
     nameLabel.text = text
     }
-    
     
 }

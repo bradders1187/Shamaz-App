@@ -33,10 +33,8 @@ class GameController: UIViewController {
     DispatchQueue.main.async { [weak self] in
         self?.nextPlayerButton.layer.cornerRadius = self!.nextPlayerButton.bounds.height/2
         self?.playerListButton.layer.cornerRadius = self!.playerListButton.bounds.height/2
+        }
     }
-    }
-    
-        
     @IBAction func pastButton(_ sender: Any, forEvent event: UIEvent) {
         let past = ["1 Year ago?", "1 Week ago?", "2 Weeks ago?", "5 Years ago?", "2 days ago?"]
         let alert = (UIAlertController (title: pastQuestions.randomElement(), message: past.randomElement(), preferredStyle: .alert))
@@ -45,7 +43,6 @@ class GameController: UIViewController {
             
         pastFutureDidClick()
     }
-        
     @IBAction func futureButton(_ sender: Any, forEvent event: UIEvent) {
         let future = ["1 Year from now?", " 1 Week from now?", "2 Weeks from now?", "5 Years from now?", "2 Days from now?"]
         let alert = (UIAlertController (title: futureQuestions.randomElement(), message: future.randomElement(), preferredStyle: .alert))
@@ -54,7 +51,6 @@ class GameController: UIViewController {
             
         pastFutureDidClick()
     }
-        
     @IBAction func nextPlayer (_ sender: Any) {
         let randomName = names.randomElement()
         nextPlayer.text = randomName
@@ -64,9 +60,8 @@ class GameController: UIViewController {
         pastButton.isEnabled = true
         futureButton.isEnabled = true
         nextPlayerButton.isEnabled = false
+        }
     }
-    }
-            
     private func pastFutureDidClick() {
         pastButton.isEnabled = false
         futureButton.isEnabled = false
@@ -75,9 +70,9 @@ class GameController: UIViewController {
     if names.isEmpty {
         nextPlayerButton.setTitle("Out of Players", for: .normal)
         playerListButton.setTitle("Play Again", for: .normal)
+        nextPlayerButton.isEnabled = false
+        }
     }
-    }
-    
     @IBAction func goback(_ sender: Any) {
         if let root = self.navigationController?.viewControllers.first as? PlayerController {
             print("START NEW GAME")

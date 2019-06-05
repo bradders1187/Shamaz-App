@@ -24,8 +24,8 @@ class PlayerController: UIViewController, UITextFieldDelegate {
         nameTextField.delegate = self
         nameTextField.placeholder = "Please enter the player name"
         tableView.separatorStyle = .none
+        saveButton.isEnabled = false
     }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("START NEW GAME: \(startNewGame)")
@@ -33,16 +33,14 @@ class PlayerController: UIViewController, UITextFieldDelegate {
         if startNewGame {
             tableView.inputDatasource = []
             tableView.reloadData()
+            playerButton.isEnabled = false
         }
     }
-    
     func textFieldDidBeginEditing(_ textField: UITextField) {
         
     }
-    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string:String) -> Bool {
         saveButton.isEnabled = textField.text?.count ?? 0 > 2 ? true : false
-        
         return true
     }
     
@@ -58,7 +56,6 @@ class PlayerController: UIViewController, UITextFieldDelegate {
         playerButton.isEnabled = true
         }
     }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         (segue.destination as! GameController).names = tableView.inputDatasource
     }

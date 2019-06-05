@@ -17,22 +17,15 @@ class CustomTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
         self.dataSource = self
         registerCells()
     }
-    
     private func registerCells() {
-        
         self.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "PlayerCell")
     }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return inputDatasource.count
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "PlayerCell") as! CustomTableViewCell
         cell.config(text: inputDatasource[indexPath.row])
-        
         return cell
     }
 }
