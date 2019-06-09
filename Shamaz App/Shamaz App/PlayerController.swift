@@ -50,6 +50,7 @@ class PlayerController: UIViewController, UITextFieldDelegate {
         tableView.inputDatasource.append(name)
         tableView.reloadData()
         nameTextField.text = nil
+        saveButton.isEnabled = false
         }
     }
         if tableView.inputDatasource.count >= 2 {
