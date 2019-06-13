@@ -34,7 +34,7 @@ class PlayerController: UIViewController, UITextFieldDelegate {
             tableView.inputDatasource = []
             tableView.reloadData()
             playerButton.isEnabled = false
-        }
+     }
     }
     func textFieldDidBeginEditing(_ textField: UITextField) {
         
@@ -51,14 +51,13 @@ class PlayerController: UIViewController, UITextFieldDelegate {
         tableView.reloadData()
         nameTextField.text = nil
         saveButton.isEnabled = false
-        }
+     }
     }
         if tableView.inputDatasource.count >= 2 {
         playerButton.isEnabled = true
-        }
+     }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         (segue.destination as! GameController).names = tableView.inputDatasource
     }
-    
 }

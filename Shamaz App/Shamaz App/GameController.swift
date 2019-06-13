@@ -33,7 +33,7 @@ class GameController: UIViewController {
     DispatchQueue.main.async { [weak self] in
         self?.nextPlayerButton.layer.cornerRadius = self!.nextPlayerButton.bounds.height/2
         self?.playerListButton.layer.cornerRadius = self!.playerListButton.bounds.height/2
-        }
+     }
     }
     @IBAction func pastButton(_ sender: Any, forEvent event: UIEvent) {
         let past = ["1 Year ago?", "1 Week ago?", "2 Weeks ago?", "5 Years ago?", "2 days ago?"]
@@ -60,7 +60,7 @@ class GameController: UIViewController {
         pastButton.isEnabled = true
         futureButton.isEnabled = true
         nextPlayerButton.isEnabled = false
-        }
+     }
     }
     private func pastFutureDidClick() {
         pastButton.isEnabled = false
@@ -71,15 +71,13 @@ class GameController: UIViewController {
         nextPlayerButton.setTitle("Out of Players", for: .normal)
         playerListButton.setTitle("Play Again", for: .normal)
         nextPlayerButton.isEnabled = false
-        }
+     }
     }
     @IBAction func goback(_ sender: Any) {
         if let root = self.navigationController?.viewControllers.first as? PlayerController {
-            print("START NEW GAME")
             root.startNewGame = true
             navigationController?.popViewController(animated: true)
-        }
+     }
     }
     
-
 }
