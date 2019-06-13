@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlayerController: UIViewController, UITextFieldDelegate {
+class PlayerController: UIViewController {
 
     @IBOutlet weak var playerButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
@@ -21,14 +21,14 @@ class PlayerController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
     super.viewDidLoad()
         playerButton.isEnabled = false
-        nameTextField.delegate = self
         nameTextField.placeholder = "Please enter the player name"
         tableView.separatorStyle = .none
         saveButton.isEnabled = false
+        nameTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
     }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("START NEW GAME: \(startNewGame)")
         
         if startNewGame {
             tableView.inputDatasource = []
@@ -36,13 +36,11 @@ class PlayerController: UIViewController, UITextFieldDelegate {
             playerButton.isEnabled = false
      }
     }
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        
+  
+        @objc func textFieldDidChange() {
+        saveButton.isEnabled = nameTextField.text?.count ?? 0 > 2 ? true : false
     }
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string:String) -> Bool {
-        saveButton.isEnabled = textField.text?.count ?? 0 > 2 ? true : false
-        return true
-    }
+
     
     @IBAction func saveButton(_ sender: Any) {
     if let name = nameTextField.text {

@@ -16,7 +16,6 @@ class GameController: UIViewController {
     @IBOutlet weak var nextPlayerButton: UIButton!
     @IBOutlet weak var playerListButton: UIButton!
     
-    
     var names: [String] = []
     let pastQuestions = ["Describe what you did this time", "Tell a funny story from", "Tell an embarrassing story from", "Tell us your favourite song from"]
     let futureQuestions = ["What can you see yourself doing in", "What would you love to be doing"]
